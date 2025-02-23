@@ -13,8 +13,8 @@ Original file is located at
 import pandas as pd
 import numpy as np
 
-movies = pd.read_csv("movies.csv")
-ratings = pd.read_csv("ratings.csv")
+movies = pd.read_csv("https://raw.githubusercontent.com/kunaldutta2023/Movie-Recommendation-System/refs/heads/main/movies.csv")
+ratings = pd.read_csv("https://raw.githubusercontent.com/kunaldutta2023/Movie-Recommendation-System/refs/heads/main/ratings.csv")
 
 movies.head()
 
