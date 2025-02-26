@@ -2,6 +2,9 @@ from flask import Flask, render_template, request
 import pandas as pd
 from movie_recommendation_system import get_recommendation  # Import your ML function
 
+movies = pd.read_csv("https://raw.githubusercontent.com/kunaldutta2023/Movie-Recommendation-System/refs/heads/main/movies.csv")
+ratings = pd.read_csv("https://raw.githubusercontent.com/kunaldutta2023/Movie-Recommendation-System/refs/heads/main/ratings.csv")
+
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
